@@ -16,12 +16,12 @@ const Index = () => {
             <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-blue-500 rounded-xl flex items-center justify-center">
               <Icon name="Car" className="text-white" size={24} />
             </div>
-            <span className="text-xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif' }}>ДРАЙВ</span>
+            <span className="text-xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif' }}>СКАДИ СЕВЕР</span>
           </div>
           <div className="hidden md:flex gap-8">
             <button onClick={() => scrollToSection('hero')} className="hover:text-purple-600 transition-colors font-medium">Главная</button>
             <button onClick={() => scrollToSection('prices')} className="hover:text-purple-600 transition-colors font-medium">Цены</button>
-            <button onClick={() => scrollToSection('reviews')} className="hover:text-purple-600 transition-colors font-medium">Отзывы</button>
+
             <button onClick={() => scrollToSection('contacts')} className="hover:text-purple-600 transition-colors font-medium">Контакты</button>
           </div>
           <Button className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600">
@@ -44,7 +44,7 @@ const Index = () => {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
-                Научим уверенно водить автомобиль за 2 месяца. Современные машины, опытные инструкторы и гибкий график занятий
+                Научим уверенно водить автомобиль за 2 месяца. Опытные инструкторы и гибкий график занятий
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-lg px-8 h-14">
@@ -59,10 +59,6 @@ const Index = () => {
                 <div>
                   <div className="text-3xl font-bold text-purple-600" style={{ fontFamily: 'Montserrat, sans-serif' }}>2000+</div>
                   <div className="text-sm text-gray-600">Выпускников</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-blue-500" style={{ fontFamily: 'Montserrat, sans-serif' }}>95%</div>
-                  <div className="text-sm text-gray-600">Сдают с 1 раза</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-orange-500" style={{ fontFamily: 'Montserrat, sans-serif' }}>15</div>
@@ -85,7 +81,7 @@ const Index = () => {
 
       <section className="py-16 px-4 bg-white/60 backdrop-blur-sm">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             <Card className="border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="pt-8 text-center space-y-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center mx-auto">
@@ -95,22 +91,14 @@ const Index = () => {
                 <p className="text-gray-600">Стаж работы от 10 лет, индивидуальный подход к каждому</p>
               </CardContent>
             </Card>
-            <Card className="border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <CardContent className="pt-8 text-center space-y-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center mx-auto">
-                  <Icon name="Car" className="text-blue-600" size={32} />
-                </div>
-                <h3 className="text-xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif' }}>Новые автомобили</h3>
-                <p className="text-gray-600">Весь автопарк 2022-2024 года выпуска с АКПП и МКПП</p>
-              </CardContent>
-            </Card>
+
             <Card className="border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="pt-8 text-center space-y-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl flex items-center justify-center mx-auto">
                   <Icon name="Calendar" className="text-orange-600" size={32} />
                 </div>
                 <h3 className="text-xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif' }}>Гибкий график</h3>
-                <p className="text-gray-600">Занятия 7 дней в неделю, выбирайте удобное время</p>
+                <p className="text-gray-600">Занятия 5 дней в неделю, выбирайте удобное время</p>
               </CardContent>
             </Card>
           </div>
@@ -121,17 +109,17 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              Тарифы обучения
+              Стоимость обучения
             </h2>
-            <p className="text-xl text-gray-600">Выберите подходящий пакет для себя</p>
+            <p className="text-xl text-gray-600">Выберите тип коробки передач</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="border-2 hover:shadow-2xl transition-all duration-300">
               <CardContent className="pt-8 space-y-6">
                 <div>
-                  <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Базовый</h3>
-                  <div className="text-4xl font-bold text-purple-600" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                    35 000₽
+                  <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>МКПП</h3>
+                  <div className="text-5xl font-bold text-purple-600" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                    48 000₽
                   </div>
                 </div>
                 <ul className="space-y-3">
@@ -149,48 +137,11 @@ const Index = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <Icon name="Check" className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                    <span>Автодром</span>
+                    <span>Автодром и город</span>
                   </li>
                 </ul>
                 <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600">
-                  Выбрать тариф
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-4 border-purple-500 shadow-2xl relative scale-105">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <Badge className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-1">
-                  Популярный
-                </Badge>
-              </div>
-              <CardContent className="pt-8 space-y-6">
-                <div>
-                  <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Стандарт</h3>
-                  <div className="text-4xl font-bold text-purple-600" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                    45 000₽
-                  </div>
-                </div>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                    <span>Всё из Базового</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                    <span>+10 часов практики</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                    <span>Город с инструктором</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                    <span>Симулятор вождения</span>
-                  </li>
-                </ul>
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600">
-                  Выбрать тариф
+                  Записаться
                 </Button>
               </CardContent>
             </Card>
@@ -198,31 +149,31 @@ const Index = () => {
             <Card className="border-2 hover:shadow-2xl transition-all duration-300">
               <CardContent className="pt-8 space-y-6">
                 <div>
-                  <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>VIP</h3>
-                  <div className="text-4xl font-bold text-purple-600" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                    65 000₽
+                  <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>АКПП</h3>
+                  <div className="text-5xl font-bold text-blue-600" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                    50 000₽
                   </div>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Icon name="Check" className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                    <span>Всё из Стандарт</span>
+                    <span>Теория 120 часов</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Icon name="Check" className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                    <span>+20 часов практики</span>
+                    <span>Практика 56 часов</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Icon name="Check" className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                    <span>Личный инструктор</span>
+                    <span>Учебные материалы</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Icon name="Check" className="text-green-500 mt-1 flex-shrink-0" size={20} />
-                    <span>Сопровождение на экзамен</span>
+                    <span>Автодром и город</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600">
-                  Выбрать тариф
+                <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-500 hover:from-blue-700 hover:to-purple-600">
+                  Записаться
                 </Button>
               </CardContent>
             </Card>
@@ -230,83 +181,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="reviews" className="py-20 px-4 bg-gradient-to-br from-purple-50/50 to-blue-50/50">
-        <div className="container mx-auto">
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              Отзывы наших учеников
-            </h2>
-            <p className="text-xl text-gray-600">Более 2000 довольных выпускников</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="border-2 hover:shadow-xl transition-all duration-300">
-              <CardContent className="pt-8 space-y-4">
-                <div className="flex gap-1">
-                  {[1,2,3,4,5].map(i => (
-                    <Icon key={i} name="Star" className="text-yellow-400 fill-yellow-400" size={20} />
-                  ))}
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  Отличная автошкола! Инструктор Сергей очень терпеливый и всё понятно объясняет. Сдала экзамен с первого раза!
-                </p>
-                <div className="flex items-center gap-3 pt-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-400 rounded-full flex items-center justify-center text-white font-bold">
-                    АМ
-                  </div>
-                  <div>
-                    <div className="font-semibold">Анна Морозова</div>
-                    <div className="text-sm text-gray-500">Октябрь 2024</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
 
-            <Card className="border-2 hover:shadow-xl transition-all duration-300">
-              <CardContent className="pt-8 space-y-4">
-                <div className="flex gap-1">
-                  {[1,2,3,4,5].map(i => (
-                    <Icon key={i} name="Star" className="text-yellow-400 fill-yellow-400" size={20} />
-                  ))}
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  Современные машины, удобный график. Теория была интересной, а на практике научился всему необходимому. Рекомендую!
-                </p>
-                <div className="flex items-center gap-3 pt-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold">
-                    ДК
-                  </div>
-                  <div>
-                    <div className="font-semibold">Дмитрий Козлов</div>
-                    <div className="text-sm text-gray-500">Сентябрь 2024</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:shadow-xl transition-all duration-300">
-              <CardContent className="pt-8 space-y-4">
-                <div className="flex gap-1">
-                  {[1,2,3,4,5].map(i => (
-                    <Icon key={i} name="Star" className="text-yellow-400 fill-yellow-400" size={20} />
-                  ))}
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  Боялась водить, но инструкторы настолько профессиональны, что страх прошёл уже после третьего занятия. Спасибо вам!
-                </p>
-                <div className="flex items-center gap-3 pt-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold">
-                    ЕС
-                  </div>
-                  <div>
-                    <div className="font-semibold">Елена Смирнова</div>
-                    <div className="text-sm text-gray-500">Ноябрь 2024</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       <section id="contacts" className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
@@ -326,7 +201,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Адрес</h4>
-                      <p className="text-gray-600">г. Москва, ул. Ленина, д. 15</p>
+                      <p className="text-gray-600">г. Мурманск, ул. А. Лобова</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -335,7 +210,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Телефон</h4>
-                      <p className="text-gray-600">+7 (495) 123-45-67</p>
+                      <p className="text-gray-600">(8152) 226-336<br />700-965</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -344,7 +219,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Email</h4>
-                      <p className="text-gray-600">info@drive-school.ru</p>
+                      <p className="text-gray-600">goppaev.a@mail.ru</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -353,7 +228,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Режим работы</h4>
-                      <p className="text-gray-600">Пн-Вс: 9:00 - 21:00</p>
+                      <p className="text-gray-600">Пн-Пт: 12:00 - 19:00</p>
                     </div>
                   </div>
                 </div>
@@ -419,7 +294,7 @@ const Index = () => {
             <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-blue-500 rounded-xl flex items-center justify-center">
               <Icon name="Car" className="text-white" size={24} />
             </div>
-            <span className="text-2xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif' }}>ДРАЙВ</span>
+            <span className="text-2xl font-bold" style={{ fontFamily: 'Montserrat, sans-serif' }}>СКАДИ СЕВЕР</span>
           </div>
           <p className="text-gray-400">Автошкола категории B</p>
           <div className="flex justify-center gap-6 pt-4">
@@ -433,7 +308,7 @@ const Index = () => {
               <Icon name="Youtube" size={24} />
             </a>
           </div>
-          <p className="text-sm text-gray-500 pt-8">© 2024 ДРАЙВ. Все права защищены</p>
+          <p className="text-sm text-gray-500 pt-8">© 2024 СКАДИ СЕВЕР. Все права защищены</p>
         </div>
       </footer>
     </div>
